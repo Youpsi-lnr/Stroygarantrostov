@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: 
+Disallow: /admin
+Disallow: /textolite
+Disallow: /admin/admin.php
+Disallow: /admin/enter.php
+Disallow: /request.php
+Disallow: /admin/enter.php
+Sitemap: https://stroygarantrostov.ru/sitemap.xml

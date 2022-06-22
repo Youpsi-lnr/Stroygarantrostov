@@ -1,0 +1,590 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*:focus {
+    outline: none;
+}
+
+*::-webkit-input-placeholder {
+    color: #c0c0c0;
+    opacity: 1;
+}
+
+*:-moz-placeholder {
+    color: #c0c0c0;
+    opacity: 1;
+}
+
+*::-moz-placeholder {
+    color: #c0c0c0;
+    opacity: 1;
+}
+
+*:-ms-input-placeholder {
+    color: #c0c0c0;
+    opacity: 1;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 100px;
+}
+
+::-webkit-scrollbar:hover {
+    background-color: rgba(0, 0, 0, 0.09);
+}
+
+::-webkit-scrollbar-thumb:vertical {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 100px;
+    background-clip: padding-box;
+    border: 2px solid rgba(0, 0, 0, 0);
+    min-height: 10px;
+}
+
+::-webkit-scrollbar-thumb:vertical:active {
+    background: rgba(0, 0, 0, 0.61);
+    border-radius: 100px;
+}
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+    color: #000;
+}
+
+body input:required:valid,
+body textarea:required:valid {
+    color: #000;
+}
+
+input[type="text"] {
+    font-family: inherit;
+    /* 1 */
+    font-size: inherit;
+    /* 1 */
+    line-height: inherit;
+    /* 1 */
+    margin: 0;
+    /* 2 */
+}
+
+html,
+body {
+    height: 100%;
+    font-display: block;
+}
+
+body {
+    font-size: 16px;
+    min-width: 320px;
+    position: relative;
+    line-height: 1.65;
+    font-family: "Roboto", sans-serif;
+    overflow-x: hidden;
+    opacity: 1;
+}
+
+.img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+img {
+    max-width: 100%;
+}
+header {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-start;
+    position: fixed;
+    width: 100%;
+    flex-shrink: 1;
+    top: 0;
+    z-index: 20;
+    height: 100px;
+    background: #fff;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .1);
+    padding: 5px 0;
+}
+
+header .logo {
+    width: 105px;
+    margin: 30px 0px 10px 25px;
+}
+.header__nav {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: fixed;
+top: 40px;
+    width: 100%;
+    z-index: 45;
+}
+
+.header__menu {
+    display: flex;
+    z-index: 40;
+}
+
+.header__menu li {
+    list-style: none;
+    margin: 0px 0px 0px 15px;
+    color: #000;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.header__menu li a {
+
+    text-decoration: none;
+    color: black;
+}
+
+.header__menu li a:hover {
+    color: orange;
+}
+
+main .container {
+    margin-top: 200px;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5%;
+}
+
+main .cont1 {
+    margin: 0px 5% 0px 10%;
+    line-height: 150%;
+}
+
+main .cont1 p {
+    padding: 15px 0% 25px 0px;
+    width: 500px;
+    font-size: 20px;
+    text-align: center;
+}
+
+main .cont1 h1 {
+    font-size: 28px;
+    text-align: center;
+}
+
+main .cont1 h2 {
+    font-size: 26px;
+    text-align: center;
+}
+
+main .cont1 input {
+    display: inline-block;
+    margin: 3% 8%;
+}
+
+main .cont2 img {
+    width: auto;
+    height: auto;
+}
+
+main .about_us {
+    align-items: center;
+    align-content: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.2)), url(/img/about.webp);
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 580px;
+    max-height: 580px;
+}
+
+main .about_us h2 {
+    vertical-align: bottom;
+    padding: 25px 0px 15px 0px;
+    text-align: center;
+    font-size: 28px;
+}
+
+main .about_us p {
+    width: 30%;
+    margin: 0px auto;
+    text-align: center;
+    font-size: 26px;
+}
+
+main .zag {
+    padding: 10px 0;
+    text-align: center;
+    align-content: center;
+    font-size: 28px;
+}
+
+main .why_me {
+     display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+}
+main .why_me div {width: 25%; }
+main .why_me img {
+    margin: 0px 35%;
+    min-height: 35%;
+    min-width: 35%;
+    max-height: 50%;
+    max-width: 50%;
+    padding-top: 25px;
+}
+
+main .why_me h3 {
+    font-size: 18px;
+    text-align: center;
+}
+
+main .why_me p {
+width: 80%;
+margin: 0 auto;
+text-align: center;
+}
+
+main .exam {
+    text-align: center;
+    align-items: stretch;
+    align-content: center;
+}
+
+main .exam p {
+    font-size: 20px;
+    line-height: 150%;
+    padding: 10px 15%
+}
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+main .services {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+}
+
+main .services div {
+    margin: 1%;
+}
+
+.emailff {
+    color: #667ccc;
+}
+.priv {
+    color: black;
+}
+.input {
+    width: 100%;
+    height: 30px;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+    outline: 0;
+}
+.input.error {
+    border-color: red;
+}
+.checkbox__input.error + .checkbox__label {
+    color: red;
+}
+.input_btn {
+    display: block;
+    background: #F9B640;
+    color: white;
+    width: 155px;
+    height: 35px;
+    border: 0px;
+}
+.checkbox__input.error {
+    color: red;
+}
+.input_btn:active {
+    border: 1px;
+    background: #E4A73A;
+}
+
+main .services img {
+    vertical-align: top;
+
+}
+
+main .services h3 {
+display: table-cell;
+    vertical-align: middle;
+    height: 80px;
+    width: 50%;
+padding: 10px 0px;
+font-size: 20px;
+text-align: center;
+}
+
+main .com {
+    display: flex;
+    margin: 100px 0px 0px 0px;
+}
+.btn_modal {
+    display: block;
+    margin:  5% auto;
+    background: #F9B640;
+    color: black;
+    width: 50%;
+    height: 45px;
+    font-family:monospace;
+    font-size: 16px;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+}
+
+main .ss1 {
+    background-color: #B2918D;
+}
+main .ss1 input {
+    background-color: #B2918D;
+}
+
+main .ss2 {
+    background-color: #E9C64B;
+}
+main .ss2 input{
+    background-color: #E9C64B;
+}
+main .ss4 {
+    background-color: #DF9E62;
+}
+main .ss4 input{
+    background-color: #DF9E62;
+}
+main .ss3 {
+    background-color: #E2B082;
+}
+main .ss3 input {
+    background-color: #E2B082;
+}
+main .contacts_s {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+}
+
+main .cnt {
+    margin-left: auto;
+}
+
+main .cnt h3 {
+    font-size: 26px;
+}
+
+main .cnt h4 {
+    font-size: 22px;
+    margin: 10px 0px 5px 0px;
+}
+
+main .cnt p {
+    font-size: 20px;
+    padding: 10px 0px 0px 0px;
+}
+
+main .form_sb {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+main .form_sb p {
+    font-size: 22px;
+    padding: 10px 0px 10px 0px;
+    text-align: left;
+}
+main .form_sb label {font-size: 16px;}
+.text_input {
+    display: block;
+    width: 500px;
+    height: calc(2.25rem + 1px);
+    padding: 0.375rem 0.75rem;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #bdbdbd;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.text_input::placeholder {
+    color: #212529;
+    opacity: 0.4;
+}
+
+.text_input:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: #bdbdbd;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(158, 158, 158, 0.25);
+}
+
+.text_area {
+    resize: none;
+    display: block;
+    width: 100%;
+    height: 150px;
+    padding: 0.375rem 0.75rem;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #bdbdbd;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+main .form_sb .input_btn {
+    margin-left: auto;
+}
+
+footer {
+    background: #222222;
+    color: #A5A5A5;
+    min-width: 100%;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 5%;
+}
+
+footer .logo {
+    max-width: 150px;
+    max-height: 200px;
+    margin-top: 10px;
+    margin-left: 15%;
+}
+
+footer a {
+    color: #A5A5A5;
+}
+
+footer h3 {
+    color: white;
+}
+
+footer .menu_fot {
+    list-style-type: none;
+}
+
+footer .menu_fot li {
+    padding: 0 10px;
+    text-decoration: none;
+}
+
+footer .menu_fot li a {
+    -webkit-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    transition: all .4s ease;
+    display: block;
+    text-decoration: none;
+}
+
+footer .menu_fot li a:hover {
+    color: orange;
+}
+
+
+.inner-testimonial {
+    text-align: center;
+    background-color: #fff;
+}
+
+.inner-testimonial > img {
+    max-width: 128px;
+    margin: 0 auto 15px;
+    opacity: 0;
+    -webkit-transition: all 1.3s linear;
+    transition: all 1.3s linear;
+}
+
+.owl-item.active .inner-testimonial > img {
+    -webkit-transition: all 1.3s linear;
+    transition: all 1.3s linear;
+}
+
+.owl-item.active .inner-testimonial > img.full-opacity {
+    opacity: 1;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+
+h3.city-name {
+    padding: 10px 0;
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+}
+
+.text-testimonial {
+    padding: 10px 25%;
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    line-height: 25px;
+}
+
+.block-items {
+    cursor: default;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+    width: 14px;
+    height: 14px;
+}
+
+.owl-theme .owl-dots .owl-dot.active span {
+    width: 18px;
+    height: 18px;
+}
+
+/*Стрелки*/
+.owl-my-nav {
+    display: none;
+}
